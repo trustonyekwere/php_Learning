@@ -26,3 +26,15 @@ echo $my_age;
 5. Arrays (index/value pairs)
 6. NULL (no value)
 7. Objects
+
+### Strings.
+String is a sequence of characters. It can be created using single or double quotes. 
+
+```php
+<?php
+
+$name = "John";    
+
+?> 
+
+```
