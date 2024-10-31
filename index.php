@@ -78,7 +78,12 @@ $songs = [
     ["name" => "reggae", "duration" => 3, "vibe" => 8 ],
 ];
 
+$songs[] = ["name" => "rap", "duration" => 2.5, "vibe" => 200 ];
+
 print_r($songs);
+
+// print_r($songs [1]);
+
 
 
 $recipe = [
