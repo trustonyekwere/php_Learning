@@ -40,8 +40,10 @@ $my_age = 25;
 
 // $my_name = null;
 
+//Indexed Arrays
 
-$coretech_staff = ["Abdul", "Francis", "Sean", "Victor", "Collins", "NOVA"]; //to add array
+
+$coretech_staff = ["Abdul", "Francis", "Sean", "Victor", "Collins", "NOVA"]; // array inputs
 
 $coretech_staff[1] = "Ebube"; //to make changes to an array
 
@@ -49,8 +51,50 @@ array_push($coretech_staff, "Favor"); //to add array to the list
 
 array_splice($coretech_staff, 2, 3); //to remove values
 
-print_r($coretech_staff); //output readable array to browser
+// print_r($coretech_staff); //output readable array to browser
 
+
+//Associative Arrays
+
+$about_me = ["full_name" => "Onyekwere Trust Enyinnaya Chimeremnka Tee Nova Noobie T-boy", "age" => 20, "hobby" => "Gaming"]; // array inputs
+
+$about_me["height"] = 189;
+$about_me["weight"] = 65;
+$about_me["skin_color"] = "red"; // to add array
+
+echo count($about_me);
+
+array_pop($about_me); //Removes the last array added
+
+print_r($about_me);
+
+echo $about_me["hobby"];
+
+//Multi-directional arrays Arrays
+
+$about_me = ["full_name" => "Onyekwere Trust Enyinnaya Chimeremnka Tee Nova Noobie T-boy", "age" => 20, "hobby" => "Gaming"]; // array inputs
+
+$about_me["height"] = 189;
+$about_me["weight"] = 65;
+$about_me["skin_color"] = "red"; // to add array
+
+echo count($about_me);
+
+array_pop($about_me); //Removes the last array added
+
+print_r($about_me);
+
+echo $about_me["hobby"];
+
+
+$recipe = [
+    "name" => "Chocolate Cake", 
+    "duration" => 5,
+    "ingredients" => "eggs, chocolate-flavouring, flour, sugar, yeast, milk, butter",
+    "description" => "Mix the dough thoroughly and stir evenly. bake in an oven for three hours!",
+    "likes" => 99
+
+];
 
 
 ?>
@@ -66,8 +110,8 @@ print_r($coretech_staff); //output readable array to browser
 </head>
 <body>
     <div class="container">
-    <h1>Hello World, my name is <?php echo $coretech_staff[5] ?></h1>
-    <h4>I am  <?php echo $my_age ?> years old</h4>
+    <!-- <h1>Hello World, my name is <?php echo $coretech_staff[5] ?></h1>
+    <h4>I am  <?php echo $my_age ?> years old</h4> -->
     <br>
     <br>
         <h4>Below are the staff from the tech company Core-Tech</h4>
@@ -78,12 +122,36 @@ print_r($coretech_staff); //output readable array to browser
             <li class="collection-item"><?php echo $coretech_staff[1]?></li>
             <li class="collection-item"><?php echo $coretech_staff[2]?></li>
             <li class="collection-item"><?php echo $coretech_staff[3]?></li>
-            <li class="collection-item"><?php echo $coretech_staff[4]?></li>
+            <!-- <li class="collection-item"><?php echo $coretech_staff[4]?></li>
             <li class="collection-item"><?php echo $coretech_staff[5]?></li>
-            <li class="collection-item"><?php echo $coretech_staff[6]?></li>
+            <li class="collection-item"><?php echo $coretech_staff[6]?></li> -->
         </ol>
         <br>
         <br>
+        <div class="row">
+            <div class="col s12 l4">
+                <div class="card z-depth-3">
+                    <div class="card-image">
+                        <img src="img/close-up-chocolate-cake.jpg" class="responsive-img" alt="">
+                        <a class="btn-floating halfway-fab waves-effect waves-light red center z-depth-3"><?php echo $recipe["likes"]; ?></a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title red-text"><?php echo $recipe["name"]; ?></span>
+                        <p>
+                            Preparation: <?php echo $recipe["duration"]; ?> minutes
+                        </p>
+                        <br>
+                        <p>
+                            <h6 class="red-text">Ingredients:</h6> <?php echo $recipe["ingredients"]; ?>
+                        </p>
+
+                        <p>
+                            <h6 class="red-text">Description:</h6> <?php echo $recipe["description"]; ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
