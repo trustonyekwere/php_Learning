@@ -72,19 +72,13 @@ echo $about_me["hobby"];
 
 //Multi-directional arrays Arrays
 
-$about_me = ["full_name" => "Onyekwere Trust Enyinnaya Chimeremnka Tee Nova Noobie T-boy", "age" => 20, "hobby" => "Gaming"]; // array inputs
+$songs = [
+    ["name" => "reggae", "duration" => 3, "vibe" => 8 ],
+    ["name" => "pop", "duration" => 4, "vibe" => 10 ],
+    ["name" => "reggae", "duration" => 3, "vibe" => 8 ],
+];
 
-$about_me["height"] = 189;
-$about_me["weight"] = 65;
-$about_me["skin_color"] = "red"; // to add array
-
-echo count($about_me);
-
-array_pop($about_me); //Removes the last array added
-
-print_r($about_me);
-
-echo $about_me["hobby"];
+print_r($songs);
 
 
 $recipe = [
