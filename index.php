@@ -70,7 +70,7 @@ print_r($about_me);
 
 echo $about_me["hobby"];
 
-//Multi-directional arrays Arrays
+//Multi-dimensional Arrays
 
 $songs = [
     ["name" => "reggae", "duration" => 3, "vibe" => 8 ],
@@ -80,9 +80,12 @@ $songs = [
 
 $songs[] = ["name" => "rap", "duration" => 2.5, "vibe" => 200 ];
 
+$songs[0]["name"];// how to get a single value from a multi-dimensional array (write the column number, then the value or name)
+
+
 print_r($songs);
 
-// print_r($songs [1]);
+// print_r($songs [1]);1
 
 
 
@@ -121,9 +124,9 @@ $recipe = [
             <li class="collection-item"><?php echo $coretech_staff[1]?></li>
             <li class="collection-item"><?php echo $coretech_staff[2]?></li>
             <li class="collection-item"><?php echo $coretech_staff[3]?></li>
-            <!-- <li class="collection-item"><?php echo $coretech_staff[4]?></li>
+            <li class="collection-item"><?php echo $coretech_staff[4]?></li>
             <li class="collection-item"><?php echo $coretech_staff[5]?></li>
-            <li class="collection-item"><?php echo $coretech_staff[6]?></li> -->
+            <li class="collection-item"><?php echo $coretech_staff[6]?></li>
         </ol>
         <br>
         <br>
