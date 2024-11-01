@@ -85,8 +85,25 @@ $songs[0]["name"];// how to get a single value from a multi-dimensional array (w
 
 print_r($songs);
 
-// print_r($songs [1]);1
+print_r($songs [1]);
 
+//Assignment Operator (=)
+
+$name = "Tee";
+
+print_r($name);
+
+//  Arithmetic operators (* , + , / , -)
+
+$z = 1;
+$x = 2;
+
+$y = ($x**2 * $x)/  $x * $z;
+
+//BODMAS
+//(Bracket Of Division, Multiplication, Addition, and Subtraction)
+
+print_r($y);
 
 
 $recipe = [
@@ -124,9 +141,6 @@ $recipe = [
             <li class="collection-item"><?php echo $coretech_staff[1]?></li>
             <li class="collection-item"><?php echo $coretech_staff[2]?></li>
             <li class="collection-item"><?php echo $coretech_staff[3]?></li>
-            <li class="collection-item"><?php echo $coretech_staff[4]?></li>
-            <li class="collection-item"><?php echo $coretech_staff[5]?></li>
-            <li class="collection-item"><?php echo $coretech_staff[6]?></li>
         </ol>
         <br>
         <br>
