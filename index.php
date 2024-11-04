@@ -120,10 +120,13 @@ echo ++$a; //adds one
 echo --$b; //removes one
 
 //conditional statement
-if (condition) {
+// if (condition) {
     # code...
-}
-else {} //
+// }
+// else {} //opposite of if, if if doesn't meet the condition
+// elseif (condition) {
+    # code...
+// }//starts where the if condition ends.
 
 
 $recipe = [
