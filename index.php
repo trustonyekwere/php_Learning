@@ -54,6 +54,21 @@ array_splice($coretech_staff, 2, 3); //to remove values
 // print_r($coretech_staff); //output readable array to browser
 
 
+//loop is running multiple codes simultaneously...
+
+//types of loop are:
+//for ($i=0; $i < ; $i++) { 
+    # code...
+//} -> For 
+
+//foreach ($variable as $key => $value) {
+    # code...
+//} -> foreach
+
+//->while
+//->switchcase
+
+
 //Associative Arrays
 
 $about_me = ["full_name" => "Onyekwere Trust Enyinnaya Chimeremnka Tee Nova Noobie T-boy", "age" => 20, "hobby" => "Gaming"]; // array inputs
