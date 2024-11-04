@@ -100,24 +100,30 @@ $x = 2;
 
 $y = ($x**2 * $x)/  $x * $z;
 
+print_r($y);
+
 //BODMAS
 //(Bracket Of Division, Multiplication, Addition, and Subtraction)
 
 //Comparison Operators - are used to compare two values (number or string)
-//echo $a == $b; //$a is equal to $b
-//echo $a != $b; //$a is not equal to $b
-//echo $b <> $q; //$a is not equal to $b
-//echo $a === 3; //type check
-//echo $a > $b; //greater than
-//echo $a < $b; //less than
-//echo $a >= $b; //greater than or equal to
-//echo $a <= $b; //less than or equal to
+echo $a == $b; //$a is equal to $b
+echo $a != $b; //$a is not equal to $b
+echo $b <> $q; //$a is not equal to $b
+echo $a === 3; //type check
+echo $a > $b; //greater than
+echo $a < $b; //less than
+echo $a >= $b; //greater than or equal to
+echo $a <= $b; //less than or equal to
 
 //Increment/Decrement Operators
 echo ++$a; //adds one
 echo --$b; //removes one
 
-print_r($y);
+//conditional statement
+if (condition) {
+    # code...
+}
+else {} //
 
 
 $recipe = [
