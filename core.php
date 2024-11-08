@@ -2,13 +2,12 @@
 
 $core_tech_staff = [
     ["first name" => "Abdul", "last name" => "Joker", "skills" => "Computer fix (suicide squad)", "phone" => "+234 123 456 7890" ],
-    ["first name" => "Francis", "last name" => "Onah", "skills" => "Graphics design (last stand guy)", "phone" => "+234 123 456 8890" ],
+    ["first name" => "Francis", "last name" => "Onah", "skills" => "Graphics design (last stand)", "phone" => "+234 123 456 8890" ],
     ["first name" => "Collins", "last name" => "Okoroafor", "skills" => "Fullstack Web dev (Heavy ops)", "phone" => "+234 123 456 9890" ],
     ["first name" => "Trust", "last name" => "Onyekwere", "skills" => " Web dev (meleeee)", "phone" => "+234 123 456 9890" ],
     ["first name" => "Victor", "last name" => "Okoroafor", "skills" => "Web dev (1V1)", "phone" => "+234 123 456 6890" ],
     ["first name" => "Sean", "last name" => "Gbadamosi", "skills" => "Web dev (anime)", "phone" => "+234 123 256 6890" ],
 ];
-
 
 // print_r($core_tech_staff)
 
@@ -40,12 +39,12 @@ $core_tech_staff = [
                 <div class="col s12 m12 l4">
                     <div class="card z-depth-3">
                         <!-- <div class="card-image"> -->
-                            <!-- <img src="img/sniper-banner-mw3_d82257e641284435b0cececdb2bf3983.jpg" class="responsive-img" alt=""> -->
+                            <img src="img/sniper-banner-mw3_d82257e641284435b0cececdb2bf3983.jpg" class="responsive-img" alt="">
                         <!-- </div> -->
                         <div class="card-content">
                             <h5 class="red-text"><?php echo $staff ["first name"] ?></h5>
-                            <h6>Skills: <?php echo $staff ["skills"] ?> </h6>
-                            <h6>Phone: <?php echo $staff ["phone"] ?> </h6>
+                            <p>Skills: <?php echo $staff ["skills"] ?> </p>
+                            <p>Phone: <?php echo $staff ["phone"] ?> </p>
                         </div>
                     </div>
                 </div>
