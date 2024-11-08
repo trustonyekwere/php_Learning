@@ -68,11 +68,44 @@ array_splice($coretech_staff, 2, 3); //to remove values
 //->while
 //->switchcase
 
+// A function performs a specific task in a program and can be reused throughout the program
+
+//a simple function
+function say_date () {
+    echo "Thursday ";
+};
+
+say_date();
+
+//a function with parameters
+function welcome_message ($user) {
+    echo "Welcome dear $user good to see you again !". '<br>';
+};
+
+welcome_message("Trust");
+
+//examples
+
+//function with default parameters
+function area_of_a_circle($r=0) {
+    $a = pi() * $r**2;
+    $a = number_format($a, 1);
+    echo "area of a circle with radius $r is $a". '<br>';
+};
+
+area_of_a_circle($r=5);
+
+function phythagoras_theorem($b=0, $c=0) {
+    $a = sqrt($b**2 + $c**2);
+    $a = number_format($a, 1);
+    echo "hypotenuse with b $b and c $c is $a". '<br>';
+};
+
+phythagoras_theorem($b = 12, $c = 6);
 
 //Associative Arrays
 
-$about_me = ["full_name" => "Onyekwere Trust Enyinnaya Chimeremnka Tee Nova Noobie T-boy", "age" => 20, "hobby" => "Gaming"]; // array inputs
-
+$about_me = ["full_name" => "Onyekwere Trust Enyinnaya", "age" => 20, "hobby" => "Gaming"];  // array inputs
 $about_me["height"] = 189;
 $about_me["weight"] = 65;
 $about_me["skin_color"] = "red"; // to add array
@@ -121,18 +154,18 @@ print_r($y);
 //(Bracket Of Division, Multiplication, Addition, and Subtraction)
 
 //Comparison Operators - are used to compare two values (number or string)
-echo $a == $b; //$a is equal to $b
-echo $a != $b; //$a is not equal to $b
-echo $b <> $q; //$a is not equal to $b
-echo $a === 3; //type check
-echo $a > $b; //greater than
-echo $a < $b; //less than
-echo $a >= $b; //greater than or equal to
-echo $a <= $b; //less than or equal to
+// echo $a == $b; //$a is equal to $b
+// echo $a != $b; //$a is not equal to $b
+// echo $b <> $q; //$a is not equal to $b
+// echo $a === 3; //type check
+// echo $a > $b; //greater than
+// echo $a < $b; //less than
+// echo $a >= $b; //greater than or equal to
+// echo $a <= $b; //less than or equal to
 
 //Increment/Decrement Operators
-echo ++$a; //adds one
-echo --$b; //removes one
+// echo ++$a; //adds one
+// echo --$b; //removes one
 
 //conditional statement
 // if (condition) {
@@ -171,7 +204,7 @@ $recipe = [
     <h4>I am  <?php echo $my_age ?> years old</h4> -->
     <br>
     <br>
-        <h4>Below are the staff from the tech company Core-Tech</h4>
+        <h4>Core-Tech Staff</h4>
         <br>
         <br>
         <ol class="collection">
