@@ -11,9 +11,9 @@ if (!$connect) {
     echo "could not connect" . mysqli_connect_error();
 }
 
-else {
-    echo "connection successful";
-}
+// else {
+//     echo "connection successful";
+// }
 
 
 ?>
