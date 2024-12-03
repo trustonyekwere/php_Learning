@@ -33,23 +33,23 @@ $recipe = mysqli_fetch_assoc($send_query);
         </h2>
 
         <div class="container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-l6">
-                        <div class="card z-depth-0">
-                            <div class="card-content">
-                                <img src="<?php
-                                
-                                echo $recipe['recipe_type'] 
-                                
-                                ?>.jpg" alt="" class="responsive-img"> 
-                                <h2><?php echo $recipe['recipe_name'] ?></h2>
-                                <span><b>Ingredients:</b> <?php echo $recipe['ingredients'] ?></span> <br><br>
-                                <span><b>Duration:</b> <?php echo $recipe['duration'] ?> minutes</span> <br><br>
-                                <span><b>Description:</b> <?php echo $recipe['description'] ?></span> <br><br>
-                                <a class="btn-floating waves-effect waves-light red"><i class="material-icons">favorite</i></a>
-                                <?php echo $recipe['likes'] ?>
-                            </div>
+            <div class="container"><br>
+                <div class="card z-depth-1">
+                    <div class="row">
+                        <div class="col s12 m12 l6"><br>
+                            <img src="<?php echo $recipe['recipe_type'] ?>.png" alt="" class="responsive-img"> 
+                        </div>
+                        <div class="col s12 m12 l6">
+                            <h2>
+                                <b><?php echo $recipe['recipe_name'] ?></b>
+                            </h2>
+                            <span><b>Ingredients:</b> <?php echo $recipe['ingredients'] ?></span> <br><br>
+                            <span><b>Duration:</b> <?php echo $recipe['duration'] ?> minutes</span> <br><br>
+                            <span><b>Description:</b> <?php echo $recipe['description'] ?></span> <br><br>
+                            <a class="btn-floating waves-effect waves-light red">
+                                <i class="material-icons">favorite</i>
+                            </a>
+                            <b><?php echo $recipe['likes'] ?></b><br><br>
                         </div>
                     </div>
                 </div>

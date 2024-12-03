@@ -50,18 +50,21 @@
         <div class="row">
 
             <?php foreach ($recipes as $recipe) { ?>
-                <div class="col s12 m12 l4">
+                <div class="col s12 m12 l3">
                     <div class="card z-depth-1">
+
+                        <div class="card-image">
+                            <img src="<?php echo $recipe['recipe_type'] ?>.png" alt="">
+                        </div>
 
                         <div class="card-content">
 
-                            <h5 class="red-text card-title"><?php echo $recipe ["recipe_name"] ?></h5><br>
+                            <h5 class="blue-text card-title"><b><?php echo $recipe ["recipe_name"] ?></b></h5><br>
 
                             <p>
                                 Duration: <?php echo $recipe["duration"]; ?> minutes
                             </p>
-                            <br>
-
+                            
                         </div>
                         <div class="card-action">
                             <a href="./recipe.php?recipe_id=<?php echo $recipe['recipe_id']; ?>">Read More</a>
@@ -69,7 +72,7 @@
                     </div>
                 </div>
             <?php } ?>
-        </div> 
+        </div> <br><br>
         <div class="center-align">
             <a style="padding: auto;" class="btn btn-flat blue darken-3 white-text" href="./upload.php">UPLOAD</a>
         </div>       
