@@ -22,7 +22,10 @@
 
         // print_r($recipes)
 
+        include ('./header.php');
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,8 +49,6 @@
     <div class="container">
         <div class="row">
 
-            <h4 class="center-align" >RECIPES</h4>
-
             <?php foreach ($recipes as $recipe) { ?>
                 <div class="col s12 m12 l4">
                     <div class="card z-depth-1">
@@ -58,15 +59,23 @@
 
                             <p>
                                 Duration: <?php echo $recipe["duration"]; ?> minutes
-                            </p><br>
+                            </p>
+                            <br>
 
+                        </div>
+                        <div class="card-action">
+                            <a href="./recipe.php?recipe_id=<?php echo $recipe['recipe_id']; ?>">Read More</a>
                         </div>
                     </div>
                 </div>
             <?php } ?>
-        </div>        
+        </div> 
+        <div class="center-align">
+            <a style="padding: auto;" class="btn btn-flat blue darken-3 white-text" href="./upload.php">UPLOAD</a>
+        </div>       
     </div>
     <br>
 
-</body>
-</html> 
+<?php
+    include ("./footer.php");
+?>
