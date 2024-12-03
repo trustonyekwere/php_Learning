@@ -30,10 +30,10 @@ include ('./header.php');
                 <?php foreach ($league_data as $data) { ?>
                     <tbody>
                     <tr>
-                    <td><?php echo $data ["id"] ?></td>
-                    <td><?php echo $data ["Name"] ?></td>
-                    <td><?php echo $data ["GW10 Pts"] ?></td>
-                    <td><?php echo $data ["GW10 Rank"] ?></td>
+                        <td><?php echo $data ["id"] ?></td>
+                        <td><?php echo $data ["Name"] ?></td>
+                        <td><?php echo $data ["GW10 Pts"] ?></td>
+                        <td><?php echo $data ["GW10 Rank"] ?></td>
                     </tr>
                     </tbody>
                 <?php } ?>             

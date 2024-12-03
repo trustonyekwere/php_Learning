@@ -13,7 +13,7 @@
 
     //Check if register button is pressed.
 
-    //also made the message to show onlyh when register button is clicked.
+    //also made the message to show only when register button is clicked.
 
     if (isset ($_GET["register"])) {
         $full_name = $_GET ["full_name"];
