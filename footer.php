@@ -1,5 +1,5 @@
 <footer>
-    <h6 style="margin-bottom: -90px !important;" class="center-align blue darken-3 white-text">
+    <h6 style="margin-bottom: -20px !important;" class="center-align blue darken-3 white-text">
         <br>
         <br>
         &copy; Copyright Trust Onyekwere
